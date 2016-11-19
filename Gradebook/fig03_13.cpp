@@ -9,13 +9,17 @@ using namespace std;
 int main()
 {
    // create two GradeBook objects
-   GradeBook gradeBook1( "CS101 Introduction to C++ Programming" );
-   GradeBook gradeBook2( "CS102 Data Structures in C++" );
+   GradeBook gradeBook1( "CS101 Introduction to C++ Programming", "Frank" );
+   GradeBook gradeBook2( "CS102 Data Structures in C++", "Henk");
 
    // display initial value of courseName for each GradeBook
    cout << "gradeBook1 created for course: " << gradeBook1.getCourseName()
       << "\ngradeBook2 created for course: " << gradeBook2.getCourseName() 
       << endl;
+
+    gradeBook1.displayMessage();
+    cout << endl;
+    gradeBook2.displayMessage();
 } // end main
 
 

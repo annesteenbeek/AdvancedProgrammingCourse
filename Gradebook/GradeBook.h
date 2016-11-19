@@ -8,12 +8,16 @@
 class GradeBook
 {
 public:
-   explicit GradeBook( std::string ); // constructor initialize courseName
-   void setCourseName( std::string ); // sets the course name
-   std::string getCourseName() const; // gets the course name
-   void displayMessage() const; // displays a welcome message
+    explicit GradeBook( std::string, std::string ); // constructor initialize courseName
+    void setCourseName( std::string ); // sets the course name
+    std::string getCourseName() const; // gets the course name
+    std::string getInstructorName() const;
+
+    // gets the instructors name
+    void displayMessage() const; // displays a welcome message
 private:
-   std::string courseName; // course name for this GradeBook
+    std::string courseName; // course name for this GradeBook
+    std::string instructorname;
 }; // end class GradeBook  
 
 

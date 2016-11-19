@@ -6,8 +6,8 @@
 using namespace std;
 
 // constructor initializes courseName with string supplied as argument
-GradeBook::GradeBook( string name )
-   : courseName( name ) // member initializer to initialize courseName 
+GradeBook::GradeBook( string name, string instructor )
+   : courseName( name ), instructorname(instructor) // member initializer to initialize courseName
 {                                                                      
    // empty body
 } // end GradeBook constructor
@@ -30,7 +30,15 @@ void GradeBook::displayMessage() const
    // call getCourseName to get the courseName
    cout << "Welcome to the grade book for\n" << getCourseName() 
       << "!" << endl;
-} // end function displayMessage
+   cout << "This course is presented by: " << getInstructorName()
+       << "." << endl;
+}
+
+string GradeBook::getInstructorName() const {
+   return instructorname;
+}
+
+// end function displayMessage
 
 
 /**************************************************************************

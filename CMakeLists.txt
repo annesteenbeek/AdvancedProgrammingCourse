@@ -3,5 +3,6 @@ project(AdvancedProgrammingCourse)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp)
-add_executable(AdvancedProgrammingCourse ${SOURCE_FILES})
+set(SOURCE_FILES Gradebook/fig03_13.cpp Gradebook/GradeBook.cpp Gradebook/GradeBook.h)
+include_directories(Gradebook)
+add_executable(Gradebook ${SOURCE_FILES})
