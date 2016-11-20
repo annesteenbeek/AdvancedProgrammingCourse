@@ -3,6 +3,7 @@
 // interface without revealing the implementations of GradeBook's member
 // functions, which are defined in GradeBook.cpp.
 #include <string> // class GradeBook uses C++ standard string class
+#include <Student.h>
 
 // GradeBook class definition
 class GradeBook
@@ -18,7 +19,7 @@ public:
 private:
     std::string courseName; // course name for this GradeBook
     std::string instructorname;
-}; // end class GradeBook  
+}; // end class GradeBook
 
 
 /**************************************************************************

@@ -3,6 +3,7 @@
 // implementations of the member functions prototyped in GradeBook.h.
 #include <iostream>
 #include "GradeBook.h" // include definition of class GradeBook
+#include "Student.h"
 using namespace std;
 
 // constructor initializes courseName with string supplied as argument
